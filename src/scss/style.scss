@@ -1,6 +1,8 @@
 $bg-color:#D1E8E2;
-$font-color:#e83e8c;
+$font-color:#fff;
 $primary-color:#116466;
+$dark-overlay: rgba(0,0,0,7);
+$font-size:30px;
 
 body{
   background: $bg-color;
@@ -9,5 +11,36 @@ body{
 
 .navbar{
   border-bottom: $primary-color 3px solid;
-  opacity: 0.8
+  opacity: 0.8;
+}
+
+#home-section{
+  background:#476890;
+  background-size:cover;
+  background-attachment:fixed;
+  min-height: 700px;
+
+  .dark-overlay{
+    background: $dark-overlay;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    min-height: 700px;
+  }
+  .home-inner{
+    padding-top: 150px;
+  }
+  .home-inner{
+    opacity: 0.8;
+
+  }
+  .fa{
+    color:$primary-color;
+    background: #fff;
+    padding: 4px;
+    border-radius: 5px;
+    font-size:$font-size;
+
+  }
 }
