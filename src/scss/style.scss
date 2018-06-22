@@ -1,8 +1,8 @@
 $bg-color:#D1E8E2;
 $font-color:#fff;
 $primary-color:#116466;
-$dark-overlay: rgba(0,0,0,7);
-$font-size:30px;
+$dark-overlay: rgba(0,0,0,0.7);
+$icon-size:30px;
 
 body{
   background: $bg-color;
@@ -15,8 +15,9 @@ body{
 }
 
 #home-section{
-  background:#476890;
+  background: url('../images/header.jpg');
   background-size:cover;
+  background-repeat: no-repeat;
   background-attachment:fixed;
   min-height: 700px;
 
@@ -40,7 +41,26 @@ body{
     background: #fff;
     padding: 4px;
     border-radius: 5px;
-    font-size:$font-size;
+    font-size:$icon-size;
 
   }
+}
+#explore-section{
+  .fa{
+    color: #fff;
+    background: #333;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: $icon-size;
+  }
+}
+#create-section{
+  .fa{
+    color: #fff;
+    background: #333;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: $icon-size;
+  }
+
 }
